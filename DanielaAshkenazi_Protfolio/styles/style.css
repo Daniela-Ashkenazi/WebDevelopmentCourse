@@ -1,0 +1,316 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Bellefair|Open+Sans');
+
+
+*{
+    font-family: Open sans;
+}
+
+html, body {
+    margin: 0px auto;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/1.jpg');
+    direction: rtl;
+    font-family: Open sans;
+}
+
+
+
+#main-window {
+    overflow: -webkit-paged-x;
+    margin: 15px;
+    direction: rtl;
+    background-color: rgba(0,0,0,0.3);
+    min-height: 100%;
+}
+
+    #main-window li a.currentpage {
+        background-color: black;
+        color: honeydew;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    #main-window li a:hover {
+        background-color: #b3b3b3;
+        color: honeydew;
+        border: 3px outset gray;
+        box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
+    }
+
+/*תפריט ולוגו*/
+
+#logo {
+    margin: 0px auto;
+    width: 280px;
+    height: 100%;
+    /* background-image: url('../images/לוגו1.png');
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+
+#main-title {
+    font-size: 56px;
+    
+}
+
+#main-menu {
+    margin: 0px auto;
+    
+}
+
+#menu-links {
+    overflow: auto;
+    margin: 0px 10px;
+    display: block;
+    list-style: none;
+    font-size: 24px;
+}
+
+#menu-links > li {
+    float: right; 
+    width: 25%;
+}
+
+    #menu-links > li a {
+        display: block;
+        padding-top: 10px;
+        text-align: center;
+        color: white;
+        margin: 5px 10px;
+        padding: 10px;
+        text-decoration: none;
+        background-color: dimgrey;
+    }
+
+/*עמוד בית*/
+
+#page-content.home-page-content {
+    text-align: center;
+    font-size: 72px;
+}
+
+.p-homepage {
+    border: 1px solid rgba(0, 0, 0, .5);
+    background-color: rgba(255,255,255,0.7);
+    margin: 1vw auto;
+    padding: 1vw;
+    min-height: 30vw;
+    font-size:40px;
+    width: 40vw;
+}
+
+#page-content.main-p {
+    border: 1px solid rgba(0, 0, 0, .5);
+    background-color: white;
+    margin: 10px 330px;
+    padding: 10px;
+    text-align: center;
+}
+
+.make-contact {
+    display: inline-block;
+    padding-top: 3px;
+    text-align: center;
+    color: black;
+    padding:20px;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 22px;
+}
+
+.icons {
+    height: 32px;
+    width: 32px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: center;
+    float: right;
+}
+
+.login-container .icons {
+    float: left;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.icons a {
+    text-decoration: none;
+    line-height: 21px;
+    margin: 5px auto;
+    color: #131A56;
+    font-size: 18px;
+}
+
+/*תמונות דף בית*/
+
+#photoshow {
+    display: block;
+    padding: auto;
+    width: 400px;
+    height: 400px;
+}
+.photos
+{
+    width: 20vw;
+}
+
+@keyframes slideInTOLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-32vw);
+    }
+}
+
+@keyframes slideInTORight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(32vw);
+    }
+}
+
+@keyframes rotateLeft {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-90deg);
+    }
+}
+
+
+.stay-rotate {
+    position: absolute;
+    left: 39vw;
+    display: inline-block;
+    animation: rotateLeft 4s ease-out 0.2s both;
+}
+.move-right {
+    position: absolute;
+    left: 39vw;
+    display: inline-block;
+    animation: slideInTORight 4s ease-out 0.2s both;
+}
+
+.move-left {
+    position: absolute;
+    left: 39vw;
+    display: inline-block;
+    animation: slideInTOLeft 4s ease-out 0.2s both;
+}
+
+
+/*נערה עם עגיל פנינה */
+#main-daniel-image img {
+    width: 26vw;
+    float: left;
+    margin: 1vw;
+}
+
+#main-girl-image img {
+    width: 26vw;
+    float: right;
+    margin: 1vw;
+}
+
+#main-p {
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255,255,255,0.7);
+    min-height: 30vw;
+    font-size: 22px;
+    
+}
+
+.p-daniel{
+    width: 40vw;
+    float: right;
+}
+
+#videogirl {
+    display: block;
+    width: 40vw;
+    padding-top: 3vw;
+    height: 20vw;
+    margin: 1vw auto;
+}
+#hartifact {
+    font-size: 77px;
+    text-align: center;
+}
+
+    /*portrait*/
+#hportrait {
+    font-size: 77px;
+    text-align: center;
+    
+}
+
+.portrait-image {
+    width: 40vw;
+    margin: 1vw;
+    float: right;
+}
+
+.p-portrait {
+    height: 25vw;
+    width: 47vw;
+    float: left;
+    margin: 2vw;
+}
+
+#portraitsong {
+    display: block;
+    width: 44vw;
+    height: 4vw;
+    padding-right: 27vw;
+    margin-bottom: 2vw;
+}
+
+#giffood {
+    display: block;
+    margin: auto;
+    padding-top: 25px;
+}
+
+
+/*כרזה*/
+
+#hposter {
+    font-size: 77px;
+    text-align: center;
+    font-family: Open sans;
+}
+
+.poster-img {
+    width: 30vw;
+    float: left;
+    margin: 1vw; 
+}
+
+.p-poster {
+    float: right;
+    width: 50vw;
+    margin: 1vw;
+}
+
+#postersong {
+    display: block;
+    width: 47vw;
+    height: 15vw;
+    padding-right: 1.5vw;
+    margin-bottom: 2vw;
+}
